@@ -3,7 +3,9 @@
 ### How to play
 
 Step 1. Run Ganache
+
 Step 2. Deploy contracts via ```truffle migrate```. By default contract is deployed with "Rock" as the 1st move of player1, address of player2 and 1 ETH at stake.
+
 Step 3. Player2 makes a "Paper" move and sends 1 ETH at stake. Run ```truffle console```. In console run:
 ```js
 RPS.deployed().then(function(rps){ return rps.play(2, { from: web3.eth.accounts[1], value: 1000000000000000000 }); });
